@@ -202,6 +202,11 @@ Endpoint local:
 - Backend API: `http://localhost/api`
 - PostgreSQL: internal Docker service by default
 
+Contoh akses domain VPS:
+
+- Frontend: `http://addorsampang.duckdns.org`
+- Backend API via reverse proxy: `http://addorsampang.duckdns.org/api`
+
 Cek status container:
 
 ```bash

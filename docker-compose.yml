@@ -29,11 +29,11 @@ services:
       APP_DATASOURCE_URL: jdbc:postgresql://postgres:5432/developer_workspace
       APP_DATASOURCE_USERNAME: developer_workspace
       APP_DATASOURCE_PASSWORD: Password123
-      APP_CORS_ALLOWED_ORIGINS: http://188.166.206.86,http://188.166.206.86:4200,http://localhost,http://localhost:4200
+      APP_CORS_ALLOWED_ORIGINS: http://addorsampang.duckdns.org,http://188.166.206.86,http://188.166.206.86:4200,http://localhost,http://localhost:4200
 
   frontend:
     build:
-      context: ../developer-workspace-fe
+      context: ../developer-workspace-frontend
     container_name: developer-workspace-frontend
     restart: unless-stopped
     depends_on:
