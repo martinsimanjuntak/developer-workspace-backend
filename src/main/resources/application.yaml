@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: developer-workspace
+  datasource:
+    url: ${APP_DATASOURCE_URL:jdbc:postgresql://localhost:5432/developer_workspace}
+    username: ${APP_DATASOURCE_USERNAME:developer_workspace}
+    password: ${APP_DATASOURCE_PASSWORD:Password123}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+
+server:
+  error:
+    include-message: always
+
+app:
+  cors:
+    allowed-origins: ${APP_CORS_ALLOWED_ORIGINS:http://localhost:4200}
