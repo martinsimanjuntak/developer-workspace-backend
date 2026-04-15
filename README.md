@@ -198,9 +198,9 @@ docker compose down -v
 
 Endpoint local:
 
-- Frontend: `http://localhost:4200`
-- Backend API: `http://localhost:8080`
-- PostgreSQL: `localhost:5432`
+- Frontend: `http://localhost`
+- Backend API: `http://localhost/api`
+- PostgreSQL: internal Docker service by default
 
 Cek status container:
 
